@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+
+    android:fitsSystemWindows="true"
+
+    android:orientation="vertical">
+
+
+    <com.cp.mylibrary.custom.TitleBarView
+        android:id="@+id/webview_test_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.cp.mylibrary.custom.TitleBarView>
+
+    <com.cp.mylibrary.custom.ProgressWebView
+        android:id="@+id/webview_test_view"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"></com.cp.mylibrary.custom.ProgressWebView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>相机</item>
+    </string-array>
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="avatar_option">
+        <item>更换头像</item>
+        <item>查看大头像</item>
+    </string-array>
+
+    <string-array name="yi_xian_ji_array">
+        <item>自定义收益率</item>
+        <item>个性推荐</item>
+        <item>基金挑选</item>
+
+    </string-array>
+
+    <string-array name="kaihu_array">
+        <item>1.填写个人信息</item>
+        <item>2.关联银行卡</item>
+        <item>3.开户完成</item>
+
+    </string-array>
+    <string-array name="huoqibao_array">
+
+        <item>交易记录</item>
+        <item>万份收益</item>
+        <item>每日收益</item>
+
+
+    </string-array>
+
+
+    <string-array name="fundlist_array">
+
+        <item>混合型</item>
+        <item>债券型</item>
+        <item>股票型</item>
+        <item>货币型</item>
+        <item>其  它</item>
+
+
+    </string-array>
+
+
+
+    <string-array name="baoxianlist_array">
+
+        <item>推荐</item>
+        <item>全部</item>
+        <item>意外险</item>
+        <item>健康险</item>
+        <item>重疾险</item>
+        <item>医疗险</item>
+        <item>旅游险</item>
+        <item>财产险</item>
+        <item>少儿险</item>
+        <item>老人险</item>
+
+
+    </string-array>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+</resources>

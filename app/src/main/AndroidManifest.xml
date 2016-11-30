@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anyin.guwentong">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.anyin.guwentong.app.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <activity
+            android:name="com.anyin.guwentong.ui.AppStart"
+
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.anyin.guwentong.ui.GuideActivity"
+
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.anyin.guwentong.MainActivity"
+
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.anyin.guwentong.ui.MessageListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+
+        <activity
+            android:name="com.anyin.guwentong.ui.LoginActivity"
+
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.anyin.guwentong.ui.RegisterActivity"
+
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name="com.anyin.guwentong.ui.UserInfoActivity"
+
+            android:screenOrientation="portrait" />
+
+
+
+
+
+        <activity
+            android:name="com.anyin.guwentong.ui.AboutMe"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+
+        <activity
+            android:name="com.anyin.guwentong.ui.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+
+
+
+
+
+        <activity
+            android:name="com.anyin.guwentong.ui.VersionUpdateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+
+
+
+
+
+
+        <activity
+            android:name="com.anyin.guwentong.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+
+</manifest>

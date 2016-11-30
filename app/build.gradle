@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.anyin.guwentong"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 7
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.github.SelfImprCp:XiaoShuTouUitl:v1.7.9'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/json-lib-2.4-jdk15.jar')
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    compile files('libs/commons-codec-1.10.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/aliyun-oss-sdk-android-2.2.0.jar')
+    compile project(':PushSDK')
+}

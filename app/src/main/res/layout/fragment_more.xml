@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_f7f7f8"
+
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_cp_util"
+        android:paddingBottom="@dimen/space_12"
+        android:paddingTop="@dimen/space_12"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" 更 多 "
+            android:textColor="@color/xiaoshutou_text_333333"
+            android:textSize="@dimen/text_size_18"
+
+            />
+
+    </LinearLayout>
+
+    <View
+
+        style="@style/feng_ge_xian"
+        android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@color/white_cp_util"
+        android:orientation="vertical">
+
+        <View
+
+            style="@style/feng_ge_xian"
+            android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_about_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white_cp_util">
+
+            <ImageView
+                android:id="@+id/more_about_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_about"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_about_img"
+                android:text="关于我们"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View
+
+            style="@style/feng_ge_xian"
+            android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_lianxi_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white_cp_util">
+
+            <ImageView
+                android:id="@+id/more_lianxi_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_lianxiwomen"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_lianxi_img"
+                android:text="联系我们"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View style="@style/feng_ge_xian"
+
+
+            ></View>
+
+
+        <View
+
+            style="@style/feng_ge_xian"
+            android:layout_height="@dimen/space_20"
+            android:background="@color/xiaoshutou_fegese_f7f7f8"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_jiamen_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white_cp_util"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/more_jiamen_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_jiamen"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_jiamen_img"
+                android:text="加盟我们"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View
+
+            style="@style/feng_ge_xian"
+            android:background="@color/xiaoshutou_fegese_ceced1"
+            android:visibility="gone"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_gongneng_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white_cp_util"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/more_gongneng_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_gongneng"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_gongneng_img"
+                android:text="功能介绍"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View
+
+            style="@style/feng_ge_xian"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_changjian_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white_cp_util">
+
+            <ImageView
+                android:id="@+id/more_changjian_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_changjian"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_changjian_img"
+                android:text="常见问题"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View
+
+            style="@style/feng_ge_xian"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_yonghuxiyi_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white_cp_util">
+
+            <ImageView
+                android:id="@+id/more_yonghuxiyi_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_yonghuxiyi"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_yonghuxiyi_img"
+                android:text="用户协议"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View
+
+            style="@style/feng_ge_xian"></View>
+
+        <View
+
+            style="@style/feng_ge_xian"
+            android:layout_height="@dimen/space_20"
+            android:background="@color/xiaoshutou_fegese_f7f7f8"></View>
+        <View
+
+            style="@style/feng_ge_xian"></View>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_fankui_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white_cp_util">
+
+            <ImageView
+                android:id="@+id/more_fankui_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_fankui"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_fankui_img"
+                android:text="意见反馈"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View
+
+            style="@style/feng_ge_xian"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_version_update_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_12"
+
+            android:background="@color/white_cp_util"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/more_version_update_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_version_img"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_version_update_img"
+                android:text="版本检测"></TextView>
+
+            <ImageView style="@style/my_item_enter" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+
+            style="@style/feng_ge_xian"></View>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/more_cache_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_12"
+
+            android:background="@color/white_cp_util"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/more_cache_img"
+                style="@style/my_item_image"
+                android:src="@drawable/more_clean_cache"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/my_item_text"
+                android:layout_toRightOf="@id/more_cache_img"
+                android:text="清除缓存"></TextView>
+
+
+            <TextView
+                android:id="@+id/setting_get_cache_text"
+                style="@style/my_item_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_20"
+                android:text="0kb"
+                android:textColor="@color/xiaoshutou_text_fe5933"></TextView>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+
+            style="@style/feng_ge_xian"></View>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

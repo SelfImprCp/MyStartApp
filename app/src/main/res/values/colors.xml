@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="appbg">#FF4081</color>
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+    <color name="red_color">#FF0000</color>
+
+
+
+
+
+    <color name="text_dark">#af000000</color>
+    <color name="text_light">#3f000000</color>
+    <color name="light_gray">#1a000000</color>
+    <color name="lightest_gray">#0a000000</color>
+    <color name="gray_color">#999999</color>
+
+ <!--  程序的主色调-->
+    <color name="main_color">#00b38a</color>
+
+
+    <!--  程序的主色调-->
+    <color name="bg_color_f7f7f8">#F7F7F8</color>
+
+
+
+    <color name="xiaoshutou_fegese_ceced1">#CECED1</color>
+
+    <color name="xiaoshutou_fegese_cdcdce">#CDCDCE</color>
+
+    <color name="xiaoshutou_fegese_f7f7f8">#F7F7F8</color>
+
+    <color name="xiaoshutou_text_333333">#333333</color>
+
+    <color name="xiaoshutou_text_666666">#666666</color>
+
+
+    <color name="xiaoshutou_text_999999">#999999</color>
+
+
+    <color name="xiaoshutou_text_fe5933">#fe5c33</color>
+
+    <color name="xiaoshutou_text_c3c3c3">#C3C3C3</color>
+
+    <color name="xiaoshutou_black_000000">#000000</color>
+
+    <color name="xiaoshutou_text_fb934d">#FB934D</color>
+
+    <color name="xiaoshutou_text_656565">#656565</color>
+
+    <color name="xiaoshutou_text_B1B1B1">#B1B1B1</color>
+
+    <color name="xiaoshutou_text_01A17C">#01A17C</color>
+    <color name="xiaoshutou_text_00000000">#00000000</color>
+
+
+    <color name="xiaoshutou_text_FF3333">#FF3333</color>
+
+    <color name="color_00000000">#00000000</color>
+
+
+</resources>

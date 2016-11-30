@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="feng_ge_xian">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/xiaoshutou_fegese_ceced1</item>
+
+    </style>
+
+
+    <!-- 我的界面,修改密码那些条条的图片的属性 -->
+    <style name="my_item_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/space_20</item>
+    </style>
+
+    <!-- 所有用来操作的文字的统一风格 -->
+    <style name="my_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/space_10</item>
+        <item name="android:textColor">@color/xiaoshutou_text_333333</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+
+    </style>
+
+    <!-- 我的界面,修改密码那些条条的箭头 -->
+    <style name="my_item_enter">
+        <item name="android:layout_width">@dimen/space_15</item>
+        <item name="android:layout_height">@dimen/space_15</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+        <item name="android:src">@drawable/enter_img_content</item>
+    </style>
+    <!-- 登录 -->
+    <style name="logintext">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 所有的edittext 统一用的风格-->
+
+    <style name="loginEditText" parent="logintext">
+        <item name="android:textColorHint">@color/xiaoshutou_text_c3c3c3</item>
+        <item name="android:textColor">@color/xiaoshutou_black_000000</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/space_8</item>
+        <item name="android:paddingRight">@dimen/space_8</item>
+
+        <item name="android:paddingTop">@dimen/space_2</item>
+        <item name="android:paddingBottom">@dimen/space_2</item>
+
+
+
+
+        <item name="android:textSize">@dimen/edit_text_size_commen</item>
+        <item name="android:layout_marginLeft">@dimen/space_15</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+
+    </style>
+
+
+
+    <style name="mairu_jine" parent="loginEditText">
+
+        <item name="android:digits">@string/digits_number_dian</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:inputType">phone|number</item>
+
+
+    </style>
+
+    <!--所有蓝色的button-->
+
+    <style name="all_button_style">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_all_button</item>
+        <item name="android:layout_marginLeft">@dimen/space_15</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+        <item name="android:paddingBottom">@dimen/space_14</item>
+        <item name="android:paddingTop">@dimen/space_14</item>
+        <item name="android:textColor">@color/white_cp_util</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+
+    <style name="fengxian_test_lin">
+
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:background">@color/white_cp_util</item>
+
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">@dimen/space_15</item>
+        <item name="android:paddingTop">@dimen/space_15</item>
+
+
+    </style>
+
+    <style name="fengxian_test_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:background">@color/white_cp_util</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/space_15</item>
+
+        <item name="android:textColor">@color/xiaoshutou_text_333333</item>
+
+    </style>
+
+
+    <style name="fund_detial_content">
+
+        <item name="android:textColor">@color/xiaoshutou_text_333333</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:layout_marginRight">@dimen/space_15</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+
+    </style>
+
+    <style name="Theme.CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/filled_box</item>
+        <item name="android:theme">@style/Theme.AppCompat.NoActionBar</item>
+        
+    </style>
+
+
+
+
+
+</resources>

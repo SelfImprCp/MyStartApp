@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_f7f7f8"
+    android:orientation="vertical">
+
+
+    <com.cp.mylibrary.pullto.XRefreshView
+        android:id="@+id/fragment_my_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+
+        <com.cp.mylibrary.pullto.XScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/my_fragment_top_bg"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_8">
+
+
+                        <org.kymjs.kjframe.widget.RoundImageView
+                            android:id="@+id/my_img_head"
+
+                            android:layout_width="@dimen/space_30"
+                            android:layout_height="@dimen/space_30"
+
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_12"
+                            android:clickable="true"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/no_login_head" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="基金收益"
+                            android:textColor="@color/white_cp_util"
+                            android:textSize="@dimen/text_size_20"
+
+
+                            />
+
+
+                        <FrameLayout
+                            android:id="@+id/my_fragment_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginRight="@dimen/space_12">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/space_8"
+                                android:layout_marginTop="@dimen/space_5"
+                                android:src="@drawable/my_fragment_top_message" />
+
+
+                            <LinearLayout
+                                android:id="@+id/my_fragment_message_badgeview_lin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible">
+
+                                <com.cp.mylibrary.custom.BadgeView
+                                    android:id="@+id/my_fragment_message_badgeview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/space_10"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_30">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/space_25"
+                            android:src="@drawable/my_fragment_zhuo"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/my_fragment_zuorishouyi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/white_cp_util"
+                                android:textSize="@dimen/text_size_40" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昨日收益(元)"
+                                android:textColor="@color/white_cp_util"
+                                android:textSize="@dimen/text_size_15" />
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/space_25"
+                            android:src="@drawable/my_fragment_you"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/space_15">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/my_fragment_chicangzongzichan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0.0"
+                                android:textColor="@color/white_cp_util"
+                                android:textSize="@dimen/text_size_30" />
+
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-5dp"
+                                android:text="持仓总资产"
+                                android:textColor="@color/white_cp_util"
+                                android:textSize="@dimen/text_size_15" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/my_fragment_leijishouyi"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/white_cp_util"
+                                android:textSize="@dimen/text_size_30" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="-5dp"
+                                android:text="累计收益"
+                                android:textColor="@color/white_cp_util"
+                                android:textSize="@dimen/text_size_15" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/my_fragment_tim_zuo"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/space_40"
+                    android:layout_marginRight="@dimen/space_40"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:background="@color/white_cp_util">
+
+
+                    <LinearLayout
+                        android:id="@+id/my_fragment_fundshuhui_lin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/space_6">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/my_fragment_jijinshuhui" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text=" 基金赎回"
+                            android:textColor="@color/main_color"
+                            android:textSize="@dimen/text_size_18" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        style="@style/feng_ge_xian"
+                        android:layout_width="1px"
+
+                        android:layout_height="25dp"
+
+                        android:layout_centerInParent="true"></View>
+
+
+                    <LinearLayout
+                        android:id="@+id/my_fragment_licaitixian_lin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_6">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/my_fragment_licaitixian" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text=" 理财提现"
+                            android:textColor="@color/main_color"
+                            android:textSize="@dimen/text_size_18" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    style="@style/feng_ge_xian"
+                    android:layout_marginTop="@dimen/space_15"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:layout_height="@dimen/space_25"
+                    android:background="@color/xiaoshutou_fegese_f7f7f8"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/my_fragment_jifen_lin"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_10">
+
+                        <ImageView
+                            android:id="@+id/share_app_weichat"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:layout_margin="@dimen/space_6"
+
+                            android:src="@drawable/my_fragment_jifen" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="积分"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/my_fragment_liquan_lin"
+
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_10">
+
+                        <ImageView
+                            android:id="@+id/share_app_weichat_friend"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/space_6"
+
+                            android:src="@drawable/my_fragment_liquan"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="礼券"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/my_fragment_qiandao_lin"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_10">
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/space_6"
+                            android:src="@drawable/my_fragment_qiandao"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="每日签到" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/my_fragment_fenxiang_lin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/space_10">
+
+                        <ImageView
+                            android:id="@+id/share_app_weichat_sina"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/space_6"
+                            android:src="@drawable/my_fragment_yaohaoyou"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="邀请好友"
+
+                            />
+                    </LinearLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:layout_height="@dimen/space_25"
+                    android:background="@color/xiaoshutou_fegese_f7f7f8"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_baodan_rel"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_12"
+
+                    android:layout_marginTop="@dimen/space_12"
+                    android:background="@color/white_cp_util">
+
+                    <ImageView
+                        android:id="@+id/my_baodan_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_baodan"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_baodan_img"
+                        android:text="我的保单"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:layout_height="@dimen/space_25"
+                    android:background="@color/xiaoshutou_fegese_f7f7f8"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_jijin_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_12"
+
+                    android:layout_marginTop="@dimen/space_12"
+                    android:background="@color/white_cp_util">
+
+                    <ImageView
+                        android:id="@+id/my_jijin_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_jijin"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_jijin_img"
+                        android:text="我的基金"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_jijin_jilv_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_12"
+
+                    android:layout_marginTop="@dimen/space_12"
+                    android:background="@color/white_cp_util">
+
+                    <ImageView
+                        android:id="@+id/my_jijin_jilv_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_jilvg"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_jijin_jilv_img"
+                        android:text="基金记录"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"
+
+                    android:visibility="gone"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:layout_height="@dimen/space_25"
+
+                    android:background="@color/xiaoshutou_fegese_f7f7f8"
+                    android:visibility="gone"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"
+
+                    android:visibility="gone"></View>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_gupaio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_12"
+
+
+                    android:background="@color/white_cp_util"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/my_gupaio_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_bupiao"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_gupaio_img"
+                        android:text="我的股票"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_gupaio_jilv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_12"
+
+                    android:background="@color/white_cp_util"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/my_gupaio_jilv_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_jilvg"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_gupaio_jilv_img"
+                        android:text="股票记录"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"
+                    android:visibility="gone"></View>
+
+                <View
+                    style="@style/feng_ge_xian"
+
+                    android:layout_height="@dimen/space_25"
+                    android:background="@color/xiaoshutou_fegese_f7f7f8"
+                    android:visibility="gone"></View>
+
+                <View
+                    style="@style/feng_ge_xian"
+
+                    android:background="@color/xiaoshutou_fegese_ceced1"
+                    android:visibility="gone"></View>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_licai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_12"
+
+                    android:background="@color/white_cp_util"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/my_licai_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_licai"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_licai_img"
+                        android:text="我的理财"></TextView>
+
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/space_40"
+                        android:text="￥0.00"
+                        android:textColor="@color/xiaoshutou_text_fe5933"></TextView>
+
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"
+
+                    android:visibility="gone"></View>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_licai_jilv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_12"
+
+                    android:background="@color/white_cp_util"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/my_licai_jilv_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_licaijilv"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+
+                        android:layout_toRightOf="@id/my_licai_jilv_img"
+                        android:text="理财记录"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:layout_height="@dimen/space_25"
+                    android:background="@color/xiaoshutou_fegese_f7f7f8"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_anquan_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_12"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:background="@color/white_cp_util"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/my_anquan_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_anqu"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_anquan_img"
+                        android:text="安全中心"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/my_fenxianceping_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_12"
+
+                    android:layout_marginTop="@dimen/space_12"
+                    android:background="@color/white_cp_util">
+
+                    <ImageView
+                        android:id="@+id/my_fenxianceping_img"
+                        style="@style/my_item_image"
+                        android:src="@drawable/my_fragment_b_fenxian"
+                        android:visibility="visible" />
+
+                    <TextView
+                        style="@style/my_item_text"
+                        android:layout_toRightOf="@id/my_fenxianceping_img"
+                        android:text="风险测评"></TextView>
+
+                    <ImageView style="@style/my_item_enter" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:background="@color/xiaoshutou_fegese_ceced1"></View>
+
+                <View
+
+                    style="@style/feng_ge_xian"
+                    android:layout_height="@dimen/space_25"
+                    android:background="@color/xiaoshutou_fegese_f7f7f8"></View>
+
+
+            </LinearLayout>
+
+
+        </com.cp.mylibrary.pullto.XScrollView>
+
+    </com.cp.mylibrary.pullto.XRefreshView>
+
+</LinearLayout>
+
