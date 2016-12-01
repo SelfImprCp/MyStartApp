@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\APP\Demo\AndroidGuWenTong\PushSDK\assets"/><source path="E:\APP\Demo\AndroidGuWenTong\PushSDK\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\APP\Demo\AndroidGuWenTong\PushSDK\build-types\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\APP\MyStartApp\PushSDK\assets"/><source path="E:\APP\MyStartApp\PushSDK\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\APP\MyStartApp\PushSDK\build-types\debug\assets"/></dataSet></merger>
