@@ -6,3 +6,4 @@
 1.检查网络环境，是否配置为外网服务器
 2.将一切以isDevelop 开头的boolean类型配置为false
 3.关闭log打印
+4.
