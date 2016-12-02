@@ -14,7 +14,7 @@ import com.anyin.guwentong.utils.UIHelper;
 
 import com.anyin.guwentong.api.MyAPI;
 import com.anyin.guwentong.app.AppConfig;
-import com.anyin.guwentong.utils.Uitl;
+
 import com.cp.mylibrary.api.MyResponseHandler;
 import com.cp.mylibrary.custom.TitleBarView;
 import com.cp.mylibrary.dialog.DialogHelper;

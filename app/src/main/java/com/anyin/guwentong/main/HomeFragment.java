@@ -15,7 +15,7 @@ import com.anyin.guwentong.base.BaseFragment;
 import com.anyin.guwentong.event.ExitUserEvent;
 import com.anyin.guwentong.event.LoginEvent;
 import com.anyin.guwentong.utils.UIHelper;
-import com.anyin.guwentong.utils.Uitl;
+
 import com.anyin.guwentong.utils.UserManageUtil;
 import com.cp.mylibrary.banner.ADInfo;
 import com.cp.mylibrary.banner.CycleViewPager;
@@ -47,8 +47,7 @@ public class HomeFragment extends BaseFragment {
     private CycleViewPager cycleViewPager;
 
     private FrameLayout home_fragment_top_banner_rel;
- private  LinearLayout
-    home_no_loagin_lin;
+ private  LinearLayout home_no_loagin_lin;
 
 
     // 首页返回
@@ -106,9 +105,9 @@ public class HomeFragment extends BaseFragment {
 
         home_fragment_top_banner_rel = (FrameLayout) view.findViewById(R.id.home_fragment_top_banner_rel);
 
-        LinearLayout.LayoutParams linearParamsFramet = (LinearLayout.LayoutParams) home_fragment_top_banner_rel.getLayoutParams();
-        linearParamsFramet.height = Uitl.getHomeBannerHeight();
-        home_fragment_top_banner_rel.setLayoutParams(linearParamsFramet);
+//        LinearLayout.LayoutParams linearParamsFramet = (LinearLayout.LayoutParams) home_fragment_top_banner_rel.getLayoutParams();
+//        linearParamsFramet.height = Uitl.getHomeBannerHeight();
+//        home_fragment_top_banner_rel.setLayoutParams(linearParamsFramet);
 
 
 

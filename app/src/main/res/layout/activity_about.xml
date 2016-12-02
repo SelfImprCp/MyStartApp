@@ -17,293 +17,189 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
 
-            >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_25"
+            android:src="@drawable/xiao_shu_tou" />
+
+
+        <View
+            style="@style/feng_ge_xian"
+            android:layout_marginTop="@dimen/space_15"></View>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_15"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="@dimen/space_25"
-                android:src="@drawable/xiao_shu_tou" />
 
-
-            <View
-                style="@style/feng_ge_xian"
-                android:layout_marginTop="@dimen/space_15"></View>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/space_25"
-                android:layout_marginTop="@dimen/space_15"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:src="@drawable/about_fangkuai" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/space_8"
-                    android:text="小树投介绍"
-                    android:textColor="@color/main_color"
-                    android:textSize="@dimen/text_size_14" />
-
-            </LinearLayout>
-
+                android:src="@drawable/about_fangkuai" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/space_25"
-                android:layout_marginRight="@dimen/space_25"
-                android:layout_marginTop="@dimen/space_8"
-                android:lineSpacingExtra="@dimen/space_5"
-                android:text="        广州安进信息科技有限公司（简称：安进科技）是丰盈金融服务控股集团的全资子公司。丰盈金融服务控股集团成立于2010年，旗下拥有财富管理、资产管理和互联网金融三大业务板块，行销网络遍及全国超过100个重要城市，累计为客户管理资产超过100亿。
+                android:layout_marginLeft="@dimen/space_8"
+                android:text="小树投介绍"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_8"
+            android:lineSpacingExtra="@dimen/space_5"
+            android:text="        广州安进信息科技有限公司（简称：安进科技）是丰盈金融服务控股集团的全资子公司。丰盈金融服务控股集团成立于2010年，旗下拥有财富管理、资产管理和互联网金融三大业务板块，行销网络遍及全国超过100个重要城市，累计为客户管理资产超过100亿。
 "
 
-                android:textColor="@color/xiaoshutou_text_333333"
-                android:visibility="visible" />
+            android:textColor="@color/xiaoshutou_text_333333"
+            android:visibility="visible" />
 
-            <View
-                style="@style/feng_ge_xian"
-                android:layout_marginTop="@dimen/space_15"></View>
+        <View
+            style="@style/feng_ge_xian"
+            android:layout_marginTop="@dimen/space_15"></View>
 
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_15"
+            android:orientation="horizontal">
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/space_25"
-                android:layout_marginTop="@dimen/space_15"
-                android:orientation="horizontal">
+                android:layout_gravity="center"
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:src="@drawable/about_fangkuai" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/space_8"
-                    android:text="小树投的优势"
-                    android:textColor="@color/main_color"
-                    android:textSize="@dimen/text_size_14" />
-
-            </LinearLayout>
-
+                android:src="@drawable/about_fangkuai" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/space_25"
-                android:layout_marginRight="@dimen/space_25"
-                android:layout_marginTop="@dimen/space_8"
-                android:lineSpacingExtra="@dimen/space_5"
-                android:text="        小树投是安进科技全力打造的创新型理财平台，致力于成为全球精品理财超市，我们只做优质资产的搬运工，让投资者在小树投享受到专业买手级的尊贵服务。小树投--荣获羊城晚报2015互联网年度总评榜“最具投资潜力互联网金融平台”殊荣。
+                android:layout_marginLeft="@dimen/space_8"
+                android:text="小树投的优势"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_8"
+            android:lineSpacingExtra="@dimen/space_5"
+            android:text="        小树投是安进科技全力打造的创新型理财平台，致力于成为全球精品理财超市，我们只做优质资产的搬运工，让投资者在小树投享受到专业买手级的尊贵服务。小树投--荣获羊城晚报2015互联网年度总评榜“最具投资潜力互联网金融平台”殊荣。
          小树投创始团队成员包括来自金融服务、投资、风控及互联网领域的资深专业人士，全部具备8-20年工作经历，我们热爱互联网、我们更敬畏金融。"
-                android:textColor="@color/xiaoshutou_text_333333"
-                android:visibility="visible"></TextView>
+            android:textColor="@color/xiaoshutou_text_333333"
+            android:visibility="visible"></TextView>
 
 
-            <View
-                style="@style/feng_ge_xian"
-                android:layout_marginTop="@dimen/space_15"></View>
+        <View
+            style="@style/feng_ge_xian"
+            android:layout_marginTop="@dimen/space_15"></View>
 
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_15"
+            android:orientation="horizontal">
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/space_25"
-                android:layout_marginTop="@dimen/space_15"
-                android:orientation="horizontal">
+                android:layout_gravity="center"
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:src="@drawable/about_fangkuai" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/space_8"
-                    android:text="小树投的特色"
-                    android:textColor="@color/main_color"
-                    android:textSize="@dimen/text_size_14" />
-
-
-            </LinearLayout>
-
+                android:src="@drawable/about_fangkuai" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/space_25"
-                android:layout_marginRight="@dimen/space_25"
-                android:layout_marginTop="@dimen/space_8"
-                android:lineSpacingExtra="@dimen/space_5"
-                android:text="       我们所有金融产品都经过专业金融机构进行多维度评估和筛选，严格遵循三级产品筛选体系，整体围绕两个部分、五个维度、十九项指标、二十三个标准的行业领先专业精准甄选规则，以确保该产品属于同类产品中最优级别。"
-                android:textColor="@color/xiaoshutou_text_333333"
-                android:visibility="visible"></TextView>
+                android:layout_marginLeft="@dimen/space_8"
+                android:text="小树投的特色"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_14" />
 
 
-            <View
-                style="@style/feng_ge_xian"
-                android:layout_marginTop="@dimen/space_15"></View>
+        </LinearLayout>
 
-            <LinearLayout
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_8"
+            android:lineSpacingExtra="@dimen/space_5"
+            android:text="       我们所有金融产品都经过专业金融机构进行多维度评估和筛选，严格遵循三级产品筛选体系，整体围绕两个部分、五个维度、十九项指标、二十三个标准的行业领先专业精准甄选规则，以确保该产品属于同类产品中最优级别。"
+            android:textColor="@color/xiaoshutou_text_333333"
+            android:visibility="visible"></TextView>
+
+
+        <View
+            style="@style/feng_ge_xian"
+            android:layout_marginTop="@dimen/space_15"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_15"
+            android:orientation="horizontal">
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/space_25"
-                android:layout_marginTop="@dimen/space_15"
-                android:orientation="horizontal">
+                android:layout_gravity="center"
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                android:src="@drawable/about_fangkuai" />
 
-                    android:src="@drawable/about_fangkuai" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/space_8"
-                    android:text="合作伙伴"
-                    android:textColor="@color/main_color"
-                    android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_8"
+                android:text="合作伙伴"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/text_size_14" />
 
 
-            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_margin="@dimen/space_8"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
 
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/space_8"
-                    android:layout_weight="1"
-
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_nongye" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_zhonghang" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_guangfa" />
-
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_nanfang" />
-
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_shanghai" />
-
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_beijing" />
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/space_8"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_gongshang" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_guojin" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_zhaoshang" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_huaxia" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_jingyin" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/space_4"
-                        android:layout_marginTop="@dimen/space_4"
-                        android:src="@drawable/about_honglin" />
-
-                </LinearLayout>
             </LinearLayout>
 
 

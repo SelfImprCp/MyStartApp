@@ -12,30 +12,19 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.anyin.guwentong.R;
-import com.anyin.guwentong.api.MyAPI;
-import com.anyin.guwentong.app.AppConfig;
 import com.anyin.guwentong.base.BaseFragment;
-
 import com.anyin.guwentong.bean.responbean.User;
-
 import com.anyin.guwentong.event.ExitUserEvent;
 import com.anyin.guwentong.event.LoginEvent;
 import com.anyin.guwentong.event.NewMessageEvent;
 import com.anyin.guwentong.event.UserChangeUserHeadEvent;
-
-import com.anyin.guwentong.utils.ServerDataDeal;
 import com.anyin.guwentong.utils.UIHelper;
-import com.anyin.guwentong.utils.Uitl;
 import com.anyin.guwentong.utils.UserManageUtil;
-
-import com.cp.mylibrary.api.MyResponseHandler;
 import com.cp.mylibrary.custom.BadgeView;
-import com.cp.mylibrary.dialog.DialogHelper;
 import com.cp.mylibrary.dialog.ShareDialog;
 import com.cp.mylibrary.pullto.XRefreshView;
 import com.cp.mylibrary.utils.LogCp;
 import com.cp.mylibrary.utils.NetWorkUtil;
-import com.cp.mylibrary.utils.SharePreferencesUitl;
 import com.cp.mylibrary.utils.ShowToastUtil;
 import com.cp.mylibrary.utils.StringUtils;
 import com.nostra13.universalimageloader.core.ImageLoader;

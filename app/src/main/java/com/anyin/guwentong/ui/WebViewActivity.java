@@ -9,7 +9,7 @@ import android.webkit.JavascriptInterface;
 import com.anyin.guwentong.R;
 import com.anyin.guwentong.base.BaseActivity;
 import com.anyin.guwentong.utils.UIHelper;
-import com.anyin.guwentong.utils.Uitl;
+
 
 import com.anyin.guwentong.app.AppConfig;
 import com.cp.mylibrary.custom.ProgressWebView;
@@ -18,6 +18,7 @@ import com.cp.mylibrary.dialog.ShareDialog;
 import com.cp.mylibrary.utils.ActivityManagerUtil;
 import com.cp.mylibrary.utils.LogCp;
 import com.cp.mylibrary.utils.StringUtils;
+import com.cp.mylibrary.utils.WebViewUitl;
 
 import org.kymjs.kjframe.ui.BindView;
 
@@ -120,7 +121,7 @@ public class WebViewActivity extends BaseActivity {
 
         LogCp.i(LogCp.CP, WebViewActivity.this + " 要加载的url " + url);
 
-        Uitl.setWebViewSetting(webview_test_view);
+        WebViewUitl.setWebViewSetting(webview_test_view);
 
         //webview_test_title.setTitleBackFinshActivity(this);
 

@@ -32,7 +32,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.github.SelfImprCp:XiaoShuTouUitl:v1.7.9'
+    compile 'com.github.SelfImprCp:GuWenTongUitl:v1.0.4'
     compile 'com.umeng.analytics:analytics:latest.integration'
     compile files('libs/json-lib-2.4-jdk15.jar')
     compile files('libs/sun.misc.BASE64Decoder.jar')

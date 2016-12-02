@@ -14,13 +14,6 @@ import com.anyin.guwentong.R;
 import com.anyin.guwentong.base.BaseActivity;
 import com.anyin.guwentong.bean.responbean.RegisterBean;
 
-import com.anyin.guwentong.utils.UIHelper;
-
-import com.anyin.guwentong.api.MyAPI;
-import com.anyin.guwentong.app.AppConfig;
-
-import com.anyin.guwentong.utils.ServerDataDeal;
-import com.anyin.guwentong.utils.Uitl;
 import com.cp.mylibrary.api.MyResponseHandler;
 import com.cp.mylibrary.custom.TimerTextView;
 import com.cp.mylibrary.custom.TitleBarView;
