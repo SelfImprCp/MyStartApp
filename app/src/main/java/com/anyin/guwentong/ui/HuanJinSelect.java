@@ -56,6 +56,7 @@ public class HuanJinSelect extends BaseActivity {
     private Button huanjin_button_commit;
 
 
+
     private String CE_SHI = "47.90.23.136:9999";
     private String KAI_FA = "47.90.23.136:9999";
     private String SHEN_CHAN = "api.guwenyi.com";
