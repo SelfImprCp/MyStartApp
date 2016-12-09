@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white_cp_util"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_50"
+        android:text="请选择要进入的环境："
+        android:textColor="@color/black_color_30"
+        android:textSize="@dimen/space_15" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:id="@+id/login_ceshi_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+
+        android:layout_marginTop="@dimen/space_15"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_ceshi_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:src="@drawable/kaihu_tongyi" />
+
+        <TextView
+            android:id="@+id/login_ceshi_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_15"
+            android:text="生产环境"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_12" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/login_shenchan_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+
+        android:layout_marginTop="@dimen/space_15"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/huanjin_shenchan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:src="@drawable/kaihu_notongyi" />
+
+        <TextView
+            android:id="@+id/login_shenchan_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_15"
+            android:text="生产环境"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_12" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/login_kaifa_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+
+        android:layout_marginTop="@dimen/space_15"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/huanjin_kaifa_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:src="@drawable/kaihu_notongyi" />
+
+        <TextView
+            android:id="@+id/huanjin_kaifa_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_15"
+            android:text="生产环境"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_12" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_margin="@dimen/space_15"
+        android:text="备注：生产环境为APP上线时使用的环境;
+            测试环境为测试人员进行测试时使用的环境;
+            开发环境为开发人员使用的环境"
+        />
+
+
+    <Button  android:id="@+id/huanjin_button_commit"
+
+        style="@style/all_button_style"
+        android:layout_marginTop="@dimen/space_25"
+        android:text="进入" />
+
+</LinearLayout>

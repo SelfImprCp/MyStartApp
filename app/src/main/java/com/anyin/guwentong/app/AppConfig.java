@@ -17,7 +17,6 @@ public class AppConfig {
 
     // 热修改命令
     // apkpatch.bat -f after.apk -t befor.apk -o output1 -k ailibuli.jks -p ailibuli123456 -a ailibuli -e ailibuli123456
-    public static final String HOST = "";
 
 
     // 请求前缀
@@ -27,7 +26,7 @@ public class AppConfig {
      * 是否是开发阶段，在发包时，注意把这里设置为false
      */
 
-    public static final boolean isDevelop = false;
+    public static final boolean isDevelop = true;
 
     public static final boolean isDevelop_yanzhema = true;
 

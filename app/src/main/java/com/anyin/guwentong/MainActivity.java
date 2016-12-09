@@ -19,7 +19,10 @@ import android.view.WindowManager;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.anyin.guwentong.app.AppConfig;
 import com.anyin.guwentong.main.MainTab;
+import com.anyin.guwentong.utils.Uitl;
+import com.cp.mylibrary.api.MyHttpClient;
 import com.cp.mylibrary.custom.MyFragmentTabHost;
 import com.cp.mylibrary.interf.OnTabReselectListener;
 import com.cp.mylibrary.utils.AppUtils;
@@ -59,6 +62,13 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
 
 
         super.onCreate(savedInstanceState);
+
+        if (AppConfig.isDevelop)
+        {
+            MyHttpClient.initHttp(Uitl.getInstance().getHOST());
+
+
+        }
 
 
         //     android:fitsSystemWindows="true"

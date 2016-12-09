@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Handler;
 
 import com.anyin.guwentong.R;
+import com.anyin.guwentong.utils.Uitl;
 import com.cp.mylibrary.api.MyHttpClient;
 import com.cp.mylibrary.app.Config;
 import com.cp.mylibrary.app.MyBaseApp;
@@ -29,8 +30,12 @@ public class AppContext extends MyBaseApp {
         context = this;
 
 
-        MyHttpClient.initHttp(AppConfig.HOST);
+        if (!AppConfig.isDevelop)
+        {
+            MyHttpClient.initHttp(Uitl.getInstance().getHOST());
 
+
+        }
 
         // 友盟推送
         initUMPush();

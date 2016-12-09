@@ -12,7 +12,9 @@ import android.view.WindowManager;
 import com.anyin.guwentong.MainActivity;
 
 import com.anyin.guwentong.R;
+import com.anyin.guwentong.app.AppConfig;
 import com.anyin.guwentong.utils.PushMessageBind;
+import com.anyin.guwentong.utils.UIHelper;
 
 
 /**
@@ -55,7 +57,20 @@ public class AppStart extends Activity {
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case GO_HOME:
-                    goHome();
+                    // goHome();
+                    // 开发阶段，就进入选择环境的界面
+                    if (AppConfig.isDevelop)
+                    {
+                        UIHelper.showHuanJinSelect(AppStart.this);
+
+                    }else
+                    {
+                        UIHelper.showMainActivity(AppStart.this);
+
+                    }
+                    finish();
+
+
                     break;
                 case GO_GUIDE:
                     goGuide();

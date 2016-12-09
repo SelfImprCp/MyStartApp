@@ -4,8 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.anyin.guwentong.MainActivity;
 import com.anyin.guwentong.domian.SimpleBackPage;
 import com.anyin.guwentong.ui.AboutMe;
+import com.anyin.guwentong.ui.HuanJinSelect;
 import com.anyin.guwentong.ui.LoginActivity;
 import com.anyin.guwentong.ui.RegisterActivity;
 import com.anyin.guwentong.ui.SimpleBackActivity;
@@ -43,6 +45,32 @@ public class UIHelper {
 //
 
     }
+
+
+    /** 显示 关于我们
+     *
+     * @param context
+     */
+
+    public static void showHuanJinSelect(Context context) {
+
+
+        OpenActivityUtil.getInstance().openActivity(context, HuanJinSelect.class);
+
+    }
+    /**
+     * 显示  首页
+     *
+     * @param context
+     */
+
+    public static void showMainActivity(Context context) {
+
+        OpenActivityUtil.getInstance().openActivity(context, MainActivity.class);
+
+
+    }
+
 
     /**
      * 显示  登录
